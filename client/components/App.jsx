@@ -1,5 +1,4 @@
 import React from 'react';
-
 import StudentCard from './StudentCard.jsx';
 import AllStudents from './AllStudents.jsx';
 import Spinner from './Spinner.jsx';
@@ -15,7 +14,7 @@ class App extends React.Component {
       picked: null,
       view: 'home',
       isLoading: true,
-      error: null,
+      error: null
     };
     this.pickRandomStudent = this.pickRandomStudent.bind(this);
     this.leastPickedStudent = this.leastPickedStudent.bind(this);
@@ -68,7 +67,7 @@ class App extends React.Component {
 
   // viewHome resets everything
   viewHome() {
-    this.setState({ 
+    this.setState({
       view: 'home',
       picked: null,
       studentsToShow: 0,
