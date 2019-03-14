@@ -17,7 +17,7 @@ app.use(bodyParser({extended: true}));
 // So we don't have to specify a bunch of headers
 app.use(cors());
 
-// Temp dev route
+// Temp dev route to use until I learn to set up and seed Redis DB - Ash, 3/14
 app.get('/dev', function (req, res) {
   const studentData = seedData;
   res.send(studentData)
