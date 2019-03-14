@@ -17,6 +17,11 @@ app.use(bodyParser({extended: true}));
 // So we don't have to specify a bunch of headers
 app.use(cors());
 
+// Temp dev route
+app.get('/dev', function (req, res) {
+  const studentData = seedData;
+  res.send(studentData)
+})
 
 //GET ALL STUDENTS
 app.get('/students', function (req, res) {

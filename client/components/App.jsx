@@ -26,7 +26,7 @@ class App extends React.Component {
 
   componentDidMount() {
     // fetch from (DB) list of students, sort data, then add to state
-    fetch('/students')
+    fetch('/dev')
       .then(response => response.json())
       .then((data) => {
         data.forEach((student) => {
