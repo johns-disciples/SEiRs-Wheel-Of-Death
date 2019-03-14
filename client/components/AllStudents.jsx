@@ -79,8 +79,8 @@ class AllStudents extends React.Component {
     return (
     <div className = "all-container">
       <div className = "floating-container">
-        <ButtonIcon classAndIconName={['home', 'btn-home'].join(' ')} onClick={onClose} title={'Home'}/>
-        {/* <i className={['fas fa-home', 'btn-home'].join(' ')} onClick={onClose} title="Home"></i> */}
+        {/* <ButtonIcon classAndIconName={['home', 'btn-home'].join(' ')} onClick={onClose} title={'Home'}/> */}
+        <i className={['fas fa-home', 'btn-home'].join(' ')} onClick={onClose} title="Home"></i>
         <Search search={this.searchStudents}/>
         <i className={['fas fa-arrow-circle-right', 'btn-next'].join(' ')} onClick={this.nextTenStudents} title="Next 12 Results"></i>
         <SortSelector sortSelect={this.sortStudents}/>
