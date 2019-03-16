@@ -31,6 +31,8 @@ class App extends React.Component {
     this.updateStudentData = this.updateStudentData.bind(this);
   }
 
+  // Add retry button
+
   componentDidMount() {
     // fetch from (DB) list of students, sort data, then add to state
     fetch('/dev')

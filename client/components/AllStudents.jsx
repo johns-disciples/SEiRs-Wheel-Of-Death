@@ -99,6 +99,7 @@ AllStudents.propTypes = {
     profilePic: propTypes.string.isRequired,
     lastCalled: propTypes.string.isRequired,
     timesCalled: propTypes.number.isRequired,
+    notes: propTypes.array.isRequired,
   })),
   onClose: propTypes.func,
   addNotes: propTypes.func,

@@ -4,9 +4,9 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const redis = require('redis');
 const PORT = process.env.PORT || 3000;
-import client from '../DB/redis.js';
+// import client from '../DB/redis.js';
 
-const numOfStudentsNotCalledYet;
+// const numOfStudentsNotCalledYet;
 // Temp script to generate data for testing
 const seedData = require('../DB/dummyData.json');
 
