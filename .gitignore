@@ -2,3 +2,4 @@ node_modules
 prod.js
 coverage
 dist/bundle.js
+.env

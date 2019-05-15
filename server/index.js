@@ -2,10 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
-const redis = require('redis');
+// const redis = require('redis');
+require('dotenv').config();
+
+// import client from '../DB/redis.js';
 
 const PORT = process.env.PORT || 3000;
-// import client from '../DB/redis.js';
 
 // const numOfStudentsNotCalledYet;
 // Temp script to generate data for testing
@@ -27,7 +29,7 @@ app.get('/dev', (req, res) => {
 // GET ALL STUDENTS
 app.get('/students', (req, res) => {
 
-  // TODO: need to install ioredis to get all hashes
+  // TODO
 
 });
 
