@@ -7,6 +7,7 @@
     "build": "webpack -d --watch",
     "start": "nodemon server/index.js",
     "seed": "node server/dummy.js",
+    "mongo": "mongo --host 127.0.0.1:27017",
     "test": "jest -t",
     "testc": "jest --coverage",
     "tests": "jest /client/components/__tests__/AllStudents.test.jsx"

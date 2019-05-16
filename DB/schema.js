@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
-
-mongoose.connect('mongodb://localhost/restingdb');
-mongoose.Promise = global.Promise;
+const db = require('./mongo.js');
 
 const studentSchema = new mongoose.Schema({
   id: Number,

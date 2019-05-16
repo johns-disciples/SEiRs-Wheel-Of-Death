@@ -7,7 +7,7 @@ require('dotenv').config();
 
 // import client from '../DB/redis.js';
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 // const numOfStudentsNotCalledYet;
 // Temp script to generate data for testing
