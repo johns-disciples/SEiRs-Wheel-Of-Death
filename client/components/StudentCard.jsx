@@ -22,10 +22,12 @@ const StudentCard = ({ addNotes, data: { id, name, profilePic, lastCalled, times
 
 StudentCard.propTypes = {
   data: propTypes.shape({
+    id: propTypes.number.isRequired,
     name: propTypes.string.isRequired,
     profilePic: propTypes.string.isRequired,
     lastCalled: propTypes.string.isRequired,
     timesCalled: propTypes.number.isRequired,
+    notes: propTypes.array.isRequired,
   }),
   addNotes: propTypes.func,
 };

@@ -7,6 +7,7 @@
     "build": "webpack -d --watch",
     "start": "nodemon server/index.js",
     "seed": "node server/dummy.js",
+    "mongo": "mongo --host 127.0.0.1:27017",
     "test": "jest -t",
     "testc": "jest --coverage",
     "tests": "jest /client/components/__tests__/AllStudents.test.jsx"
@@ -30,7 +31,10 @@
     "babel-loader": "^8.0.5",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
     "express": "^4.16.4",
+    "mongodb": "^3.2.4",
+    "mongoose": "^5.5.8",
     "prop-types": "^15.7.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
